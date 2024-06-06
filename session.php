@@ -11,7 +11,6 @@ $sql = "SELECT user_id, firstname, lastname, email, profile_path FROM users WHER
 $result = $con->query($sql);
 
 if ($result->num_rows > 0) {
-  // output data of each row
   while($row = $result->fetch_assoc()) {
     $userid=$row["user_id"];
     $firstname = $row["firstname"];
